@@ -16,7 +16,7 @@ func main()  {
 	fmt.Scan(&oper)
 
 	if (oper == "+") {
-		fmt.Println(x+y)
+		fmt.Println( x + y)
 	}else if (oper == "-") {
 		fmt.Println(x-y)
 	}else if (oper == "*") {
@@ -26,6 +26,5 @@ func main()  {
 	}else if (oper == "%") {
 		fmt.Println(x%y)
 	}
-
 
 }
