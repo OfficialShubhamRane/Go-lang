@@ -1,0 +1,8 @@
+## For POST
+curl.exe --include --header "Content-Type: application/json" -d "@body.json" http://localhost:8080/books
+
+## For GET
+curl.exe http://localhost:8080/books
+
+## For GET books by ID
+curl.exe http://localhost:8080/books/2
