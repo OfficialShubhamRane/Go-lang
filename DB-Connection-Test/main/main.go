@@ -45,7 +45,7 @@ func main() {
 	//	// ...
 	//}
 
-	getProduct(db)
+	//getProduct(db)
 }
 
 func getProduct(db *sql.DB) *[]Product {
