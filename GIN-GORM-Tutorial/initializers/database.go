@@ -1,6 +1,7 @@
 package initializers
 
 import (
+	"GIN-GORM-Tutorial/models"
 	"gorm.io/driver/mysql"
 	"gorm.io/gorm"
 	"log"
@@ -18,4 +19,8 @@ func ConnectToDB() {
 		log.Fatalf("Failed to connect to database %v", err)
 	}
 	log.Println("Database connection established")
+	err = DB.AutoMigrate(&models.Post{})
+	if err != nil {
+		return
+	}
 }
